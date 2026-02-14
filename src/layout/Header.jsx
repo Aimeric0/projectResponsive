@@ -1,13 +1,18 @@
 function Header()  {
   return (
     <header>
-      <h1>Responsive App</h1>
-      <div>
-        <logo src="logo.png" alt="Logo" />
-        <h1>Accueil</h1>
-        <h1>Recherche</h1>
-        <h1>Users</h1>
+      <div className="logo">
+        <img src="logo.png" alt="Logo de l'application" />
+        <h1>Responsive App</h1>
       </div>
+
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/search">Recherche</a></li>
+          <li><a href="/users">Users</a></li>
+        </ul>
+      </nav>
     </header>
   )
 }
