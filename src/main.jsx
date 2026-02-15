@@ -5,6 +5,7 @@ import App from "./App";
 import "./styles/index.css";
 import Offer from "./pages/OfferPage";
 import Home from "./pages/home"
+import ProfilePage from "./pages/ProfilePage";
 
 function SimplePage({ title }) {
   return (
@@ -21,11 +22,11 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "recherche", element: <SimplePage title="Recherche" /> },
-      { path: "profile", element: <SimplePage title="Profil" /> },
-      { path: "conditions", element: <SimplePage title="Conditions d’utilisation" /> },
+      { path: "profile", element: <ProfilePage /> },
+      { path: "conditions", element: <SimplePage title="Conditions d'utilisation" /> },
       { path: "contact", element: <SimplePage title="Contact" /> },
-      { path: "*", element: <SimplePage title="Page introuvable" /> },
-      { path: "offers/:id", element: <Offer /> }
+      { path: "offers/:id", element: <Offer /> },
+      { path: "*", element: <SimplePage title="Page introuvable" /> }
     ],
   },
 ]);
