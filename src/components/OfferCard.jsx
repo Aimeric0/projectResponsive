@@ -44,12 +44,13 @@ export default function OfferCard({ offer }) {
           Postuler
         </Button>
 
-        <NavLink
-          to={`/offers/${offer.id}`}
-          className="text-sm font-medium underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
-          style={{ color: "var(--solid)" }}
+      <NavLink
+        to={`/offers/${offer.id}`}
+        className="inline-flex items-center justify-center rounded-md border px-3 py-2 text-sm font-semibold
+             hover:bg-teal-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+        style={{ borderColor: "var(--border-strong)", color: "var(--solid)" }}
         >
-          Information supplémentaire
+        Information supplémentaire
         </NavLink>
       </div>
     </article>
