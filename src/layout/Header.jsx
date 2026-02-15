@@ -34,8 +34,6 @@ export default function Header() {
         </NavLink>
 
         <nav aria-label="Navigation principale" className="flex items-center gap-3">
-          <NavPill to="/">Accueil</NavPill>
-          <NavPill to="/recherche">Recherche</NavPill>
         </nav>
 
         <NavLink

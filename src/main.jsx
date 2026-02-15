@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./styles/index.css";
-
+import Offer from "./pages/OfferPage";
 import Home from "./pages/home"
 
 function SimplePage({ title }) {
@@ -26,7 +26,6 @@ const router = createBrowserRouter([
       { path: "contact", element: <SimplePage title="Contact" /> },
       { path: "*", element: <SimplePage title="Page introuvable" /> },
       { path: "offers/:id", element: <Offer /> }
-
     ],
   },
 ]);
