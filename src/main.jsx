@@ -25,6 +25,8 @@ const router = createBrowserRouter([
       { path: "conditions", element: <SimplePage title="Conditions d’utilisation" /> },
       { path: "contact", element: <SimplePage title="Contact" /> },
       { path: "*", element: <SimplePage title="Page introuvable" /> },
+      { path: "offers/:id", element: <Offer /> }
+
     ],
   },
 ]);
