@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@import "@radix-ui/colors/teal.css";
+@import "@radix-ui/colors/teal-Dark.css";
+@import "@radix-ui/colors/slate.css";
+@import "@radix-ui/colors/slate-Dark.css";
+
+:root {
+  color-scheme: light;
+
+  --app-bg: var(--teal1);
+  --surface: var(--teal2);
+  --surface-2: var(--teal3);
+
+  --border: var(--teal6);
+  --border-strong: var(--teal7);
+
+  --text: var(--teal12);
+  --text-muted: var(--teal11);
+
+  --solid: var(--teal9);
+  --solid-hover: var(--teal10);
+
+  --focus: var(--teal8);
+}
+
+.dark {
+  color-scheme: dark;
+
+  --app-bg: var(--teal1);
+  --surface: var(--teal2);
+  --surface-2: var(--teal3);
+
+  --border: var(--teal6);
+  --border-strong: var(--teal7);
+
+  --text: var(--teal12);
+  --text-muted: var(--teal11);
+
+  --solid: var(--teal9);
+  --solid-hover: var(--teal10);
+
+  --focus: var(--teal8);
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
